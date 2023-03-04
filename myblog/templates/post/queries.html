@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queries</title>
+</head>
+<body>
+    <h3>Todos los autores</h3>
+    <ul>
+        {%for author in authors%}
+        <li>{{author.name}} ({{author.email}}) </li>
+        {%endfor%}
+    </ul>
+   <h2>BUSCANDO ELEMENTOS CUYO ID SEA MENOR O IGUAL A 15</h3>
+    <ul>
+        {%for fil in filtrado%}
+        <li>{{fil.name}} ({{fil.email}}) </li>
+        {%endfor%}
+    </ul>
+    <h2>ORDENADOS</h2>
+    <ul>
+        {%for o in ordenado%}
+        <li>{{o.name}} | {{o.email}}</li>
+        {%endfor%}
+    </ul>
+    <h3>CONTIENE LA PALABRA YES</h3>
+    <ul>
+        {%for i in contiene%}
+        <li>{{i.name}}({{i.email}})</li>
+        {%endfor%}
+    </ul>
+</body>
+</html>

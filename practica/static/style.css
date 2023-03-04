@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.header, .footer{
+    background-color: cyan;
+    display: flex;
+    height: 100px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.footer{
+    justify-self: flex-end;
+}
+
+.nombre, .title{
+    padding-left: 30px;
+    padding-top: 20px;
+    color: darkgreen;
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.imagen{
+    display: flex;   
+    height: 300px;
+    justify-content: center;  
+}
+
+.presentacion{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.presentacion .lista{
+    list-style: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.presentacion .lista .elemento{
+    margin: 8px;
+    color: blue;
+}
+
+.siguiente{
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 6px;
+    margin-left: 20px;
+}
+
+.siguiente:hover{
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+
+.control{
+    display: flex;
+    margin: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.control .imagen2{
+    height: 200px;
+}
+
+.header img{
+    width: 100px;
+    display: flex;
+    justify-content: flex-start;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boton{
+    background-color: rgb(92, 90, 90);
+    color: white;
+    margin: 30px;
+}
+
+.header .botones{
+    display: flex;
+    justify-self: flex-end;
+    text-align: end;
+}
+
+.footer ul{
+    
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
